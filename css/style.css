@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background: rgba(243, 243, 243);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+ .celular img{
+     height: 40rem;
+ }
+
+
+ .continuar{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+     width: 50%;
+     min-height: 34rem;
+ }
+
+ .group{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+     width: 100%;
+     background: rgba(255, 255, 255);
+     border: 1px solid lightgray;
+     padding: 1.3rem 0;
+ }
+
+ .group:nth-child(1){
+     min-height: 19rem;
+ }
+
+ 
+ .logo{
+    height: 3rem;
+ }
+
+ .fotoPerfil{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     overflow: hidden;
+     border: 1px solid lightgray;
+     margin: 1rem;
+ }
+
+ .fotoPerfil img{
+     height: 8rem;
+     width: 8rem;
+ }
+
+ .instagram-login{
+     background-color: #0095f6;
+     color: #ffffff;
+     padding: 8px;
+     border-radius: 3px;
+ }
+
+ .instagram-logout{
+     color: #0095f6;
+     margin-top: 1rem;
+ }
+
+ .link-azulado{
+     color: #0095f6;
+ }
+
+ .baixar{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 1.3rem 0;    
+ }
+
+ .alterar-conta{
+     color: rgba(160, 160, 160);
+ }
+
+ .lojas{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+
+ .loja{
+     height: 3.5rem;
+     width: 10rem;
+     background-size: cover;
+ }
+
+ .loja:nth-child(1){
+     background-image: url('/img/appstore.png');
+ }
+
+ .loja:nth-child(2){
+     background-image: url('/img/playstore.png');
+ }
+
+
+ @media (max-width: 960px){
+     .instagram-wrapper{
+         width: 90%;
+     }
+ }
+
+ @media (max-width: 620px){
+     body{
+         background:rgba(255, 255, 255);
+     }
+
+     .celular{
+         display: none;
+     }
+
+     .continuar{
+         width: 100%;
+     }
+
+     .group{
+         border: 1px solid transparent;
+     }
+ }
